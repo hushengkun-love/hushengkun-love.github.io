@@ -1,0 +1,11 @@
+.DS_Store
+Thumbs.db
+
+# 开发环境文件
+node_modules/
+.env
+
+# 用户配置文件
+.ssh/
+.npmrc
+.gitconfig
