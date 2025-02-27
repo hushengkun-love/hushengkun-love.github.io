@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>东方美学颜值测评</title>
+    <!-- 引入样式 -->
+    <link rel="stylesheet" href="style.css">
+    <!-- 引入阿里图标库 -->
+    <link rel="stylesheet" href="https://at.alicdn.com/t/c/font_1234567_abcdefghijkl.css">
+</head>
+<body>
+    <div class="container">
+        <h1><i class="iconfont icon-aesthetic"></i> 东方美学测评系统</h1>
+      
+        <!-- 上传区域 -->
+        <div class="upload-box">
+            <input type="file" id="uploadInput" accept="image/*" hidden>
+            <label for="uploadInput" class="upload-label">
+                <i class="iconfont icon-upload"></i>
+                <p>点击上传面部照片</p>
+            </label>
+        </div>
+
+        <!-- 结果显示 -->
+        <div id="result" class="result-box">
+            <div class="score-display">
+                <span id="score">0.0</span>
+                <span>/100</span>
+            </div>
+            <p id="comment" class="comment-text">等待分析中...</p>
+        </div>
+
+        <!-- 页脚声明 -->
+        <div class="footer">
+            <p>数据安全承诺：本网站不会存储任何上传的图片</p>
+        </div>
+    </div>
+
+    <!-- 引入脚本 -->
+    <script src="app.js"></script>
+</body>
+</html>
