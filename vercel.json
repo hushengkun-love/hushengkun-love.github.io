@@ -1,8 +1,19 @@
 {
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/*.js",
+      "use": "@vercel/node"
+    }
+  ],
   "routes": [
     {
-      "src": "/api/analyze",  // 浏览器请求的路径
-      "dest": "/api/analyze.js" // 实际处理请求的文件
+      "src": "/api/(.*)",
+      "dest": "api/$1.js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "index.html"
     }
   ]
 }
