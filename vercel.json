@@ -1,0 +1,8 @@
+{
+  "routes": [
+    {
+      "src": "/api/analyze",  // 浏览器请求的路径
+      "dest": "/api/analyze.js" // 实际处理请求的文件
+    }
+  ]
+}
